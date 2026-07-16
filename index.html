@@ -4,531 +4,727 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JbStudios | Sports, Race &amp; Event Photography in Western MA</title>
-<meta name="description" content="JbStudios delivers professional sports, race, and event photography &amp; video coverage across Western Massachusetts, Connecticut, New York, and Vermont — from finish lines to first dances.">
+<meta name="description" content="JbStudios delivers professional sports, race, and event photography & video coverage across Western Massachusetts, Connecticut, New York, and Vermont — from finish lines to first dances.">
 <meta name="keywords" content="sports photography Western MA, race photographer New England, event photography MA CT NY VT, endurance sports photography, wedding and event photographer Massachusetts">
 <link rel="canonical" href="https://www.jbstudiosfilm.com/">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="JbStudios">
-<meta property="og:title" content="JbStudios | Sports, Race &amp; Event Photography in Western MA">
+<meta property="og:title" content="JbStudios | Sports, Race & Event Photography in Western MA">
 <meta property="og:description" content="Professional photo and video coverage for races, weddings, graduations, families, and community events across MA, CT, NY, and VT.">
 <meta property="og:image" content="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/StreetFest.jpg">
+<meta property="og:site_name" content="JbStudios">
+<meta property="og:type" content="website">
 <meta property="og:url" content="https://www.jbstudiosfilm.com/">
-
-<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="JbStudios | Sports, Race & Event Photography in Western MA">
+<meta name="twitter:description" content="JbStudios is the leader in moment capturing — race day to reception, across MA, CT, NY & VT.">
 <meta name="twitter:site" content="@JbStudios">
-<meta name="twitter:title" content="JbStudios | Sports, Race &amp; Event Photography in Western MA">
-<meta name="twitter:description" content="JbStudios is the leader in moment capturing — race day to reception, across MA, CT, NY &amp; VT.">
-
-<!-- Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "JbStudios",
-  "image": "https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/WeddingDance.jpg",
-  "description": "Sports, race, and event photography and videography serving Western Massachusetts, Connecticut, New York, and Vermont.",
-  "url": "https://www.jbstudiosfilm.com/",
-  "areaServed": ["Massachusetts", "Connecticut", "New York", "Vermont"],
-  "priceRange": "$$",
-  "sameAs": ["https://twitter.com/JbStudios"]
-}
-</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
-  :root{
-    --ink:#12211B;
-    --paper:#F0F2EC;
-    --pine:#1E3D2F;
-    --pine-light:#2C5943;
-    --bib:#E8622C;
-    --bib-dark:#C94E1E;
-    --chalk:#FBFBF8;
-    --slate:#5C6B63;
-    --line:rgba(18,33,27,0.12);
-    --radius:2px;
-    --maxw:1180px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Work Sans',sans-serif;
-    font-size:16px;
-    line-height:1.55;
-    -webkit-font-smoothing:antialiased;
-  }
-  img{max-width:100%;display:block;}
-  a{color:inherit;text-decoration:none;}
-  h1,h2,h3{font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:0.01em;margin:0;}
-  .eyebrow{
-    font-family:'IBM Plex Mono',monospace;
-    font-size:0.72rem;
-    letter-spacing:0.18em;
-    text-transform:uppercase;
-    color:var(--bib);
-    font-weight:600;
-  }
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
-  @media(prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
-  }
+/* ================= TOKENS ================= */
+:root{
+  --bg:#0a0b0d;
+  --bg-alt:#111216;
+  --panel:rgba(255,255,255,0.045);
+  --panel-strong:rgba(255,255,255,0.07);
+  --panel-border:rgba(255,255,255,0.10);
+  --text:#f3f1ea;
+  --text-dim:#93908a;
+  --text-dimmer:#605d58;
+  --accent:#d7ff3f;
+  --accent-soft:rgba(215,255,63,0.14);
+  --line:rgba(255,255,255,0.12);
+  --font-display:'Anton', sans-serif;
+  --font-body:'Inter', sans-serif;
+  --font-mono:'Space Mono', monospace;
+  --ease:cubic-bezier(.16,.84,.32,1);
+}
 
-  /* skip link */
-  .skip-link{position:absolute;left:-999px;top:0;background:var(--bib);color:var(--chalk);padding:10px 16px;z-index:999;font-family:'IBM Plex Mono',monospace;font-size:0.8rem;}
-  .skip-link:focus{left:12px;top:12px;}
+*,*::before,*::after{box-sizing:border-box;}
+html{background:var(--bg);}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.5;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+::selection{background:var(--accent);color:#0a0b0d;}
 
-  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
-    outline:2px solid var(--bib); outline-offset:3px;
-  }
+h1,h2,h3{
+  font-family:var(--font-display);
+  font-weight:400;
+  text-transform:uppercase;
+  letter-spacing:0.01em;
+  line-height:0.95;
+  margin:0;
+}
 
-  /* ===== NAV ===== */
-  header.site{
-    position:sticky;top:0;z-index:60;
-    background:rgba(240,242,236,0.92);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;max-width:var(--maxw);margin:0 auto;}
-  .logo{font-family:'Anton',sans-serif;font-size:1.35rem;letter-spacing:0.02em;display:flex;align-items:baseline;gap:6px;}
-  .logo span{color:var(--bib);}
-  nav.links{display:flex;gap:30px;font-family:'IBM Plex Mono',monospace;font-size:0.78rem;letter-spacing:0.09em;text-transform:uppercase;}
-  nav.links a{position:relative;padding:4px 0;}
-  nav.links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--bib);transition:width .25s ease;}
-  nav.links a:hover::after,nav.links a:focus-visible::after{width:100%;}
-  .nav-cta{
-    font-family:'IBM Plex Mono',monospace;font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;
-    background:var(--pine);color:var(--chalk);padding:10px 18px;border-radius:var(--radius);
-    border:1px solid var(--pine);transition:background .2s ease, color .2s ease;
-  }
-  .nav-cta:hover{background:var(--bib);border-color:var(--bib);}
-  .nav-toggle{display:none;}
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:0.72rem;
+  letter-spacing:0.2em;
+  text-transform:uppercase;
+  color:var(--accent);
+  display:flex;
+  align-items:center;
+  gap:.6em;
+}
+.eyebrow::before{
+  content:"";
+  width:26px;height:1px;
+  background:var(--accent);
+  display:inline-block;
+}
 
-  /* ===== HERO ===== */
-  .hero{position:relative;overflow:hidden;background:var(--ink);color:var(--chalk);}
-  .hero-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    grid-auto-rows:1fr;
-    height:78vh;
-    min-height:520px;
-    opacity:0.55;
-  }
-  .hero-grid img{width:100%;height:100%;object-fit:cover;filter:grayscale(15%) contrast(1.05);}
-  .hero-overlay{
-    position:absolute;inset:0;
-    background:linear-gradient(180deg, rgba(18,33,27,0.55) 0%, rgba(18,33,27,0.78) 55%, rgba(18,33,27,0.95) 100%);
-  }
-  .hero-content{
-    position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;
-    padding:0 28px 64px;max-width:var(--maxw);margin:0 auto;left:0;right:0;
-  }
-  .bib-tag{
-    display:inline-flex;align-items:center;gap:10px;
-    background:var(--chalk);color:var(--ink);
-    font-family:'IBM Plex Mono',monospace;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;
-    padding:8px 14px;border-radius:20px;width:fit-content;margin-bottom:22px;
-    border:2px solid var(--bib);
-  }
-  .bib-tag .dot{width:7px;height:7px;border-radius:50%;background:var(--bib);}
-  .hero h1{
-    font-size:clamp(2.6rem,6.4vw,5.4rem);
-    line-height:0.96;
-    max-width:14ch;
-  }
-  .hero h1 em{font-style:normal;color:var(--bib);}
-  .hero p.lede{
-    font-size:1.05rem;max-width:52ch;margin:22px 0 32px;color:#D8DED9;
-  }
-  .btn-row{display:flex;gap:16px;flex-wrap:wrap;}
-  .btn{
-    font-family:'IBM Plex Mono',monospace;font-size:0.82rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;
-    padding:15px 26px;border-radius:var(--radius);display:inline-flex;align-items:center;gap:10px;transition:transform .2s ease, background .2s ease;
-  }
-  .btn-primary{background:var(--bib);color:var(--chalk);}
-  .btn-primary:hover{background:var(--bib-dark);transform:translateY(-2px);}
-  .btn-ghost{border:1px solid rgba(251,251,248,0.4);color:var(--chalk);}
-  .btn-ghost:hover{border-color:var(--chalk);transform:translateY(-2px);}
+.wrap{max-width:1280px;margin:0 auto;padding:0 6vw;}
+@media(max-width:640px){.wrap{padding:0 22px;}}
 
-  /* course line signature divider */
-  .course-line{width:100%;height:64px;display:block;}
-  .course-line path{stroke:var(--bib);stroke-width:2;fill:none;}
-  .course-line circle{fill:var(--paper);stroke:var(--bib);stroke-width:2;}
-  .course-line-section{background:var(--paper);}
+.btn{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:.6em;
+  padding:1em 1.8em;
+  font-family:var(--font-mono);
+  font-size:0.78rem;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  border-radius:100px;
+  border:1px solid var(--line);
+  color:var(--text);
+  background:transparent;
+  overflow:hidden;
+  isolation:isolate;
+}
+.btn::before{
+  content:"";
+  position:absolute;inset:0;
+  background:var(--accent);
+  transform:translateY(101%);
+  transition:transform .5s var(--ease);
+  z-index:-1;
+}
+.btn:hover::before{transform:translateY(0);}
+.btn:hover{color:#0a0b0d;border-color:var(--accent);}
+.btn-solid{background:var(--accent);color:#0a0b0d;border-color:var(--accent);}
+.btn-solid::before{background:var(--text);}
+.btn-solid:hover{color:var(--bg);}
 
-  /* ===== SECTION SHELL ===== */
-  section{padding:96px 0;}
-  .section-head{max-width:640px;margin-bottom:52px;}
-  .section-head h2{font-size:clamp(1.9rem,3.6vw,2.9rem);margin-top:10px;line-height:1.02;}
-  .section-head p{color:var(--slate);margin-top:16px;font-size:1.02rem;max-width:56ch;}
+/* grain overlay */
+.grain{
+  position:fixed;inset:0;
+  pointer-events:none;
+  z-index:200;
+  opacity:0.05;
+  mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grain 1s steps(4) infinite;
+}
+@keyframes grain{
+  0%{transform:translate(0,0);} 25%{transform:translate(-1%,1%);}
+  50%{transform:translate(1%,-1%);} 75%{transform:translate(-1%,-1%);}
+  100%{transform:translate(0,0);}
+}
 
-  /* ===== SERVICES (bib cards) ===== */
-  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
-  .bib-card{
-    position:relative;background:var(--chalk);border:1px solid var(--line);border-radius:var(--radius);
-    padding:34px 28px 30px;transition:box-shadow .25s ease, transform .25s ease;
-  }
-  .bib-card:hover{box-shadow:0 18px 34px rgba(18,33,27,0.1);transform:translateY(-4px);}
-  .bib-number{
-    position:absolute;top:-16px;left:24px;
-    background:var(--pine);color:var(--chalk);
-    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:0.78rem;letter-spacing:0.06em;
-    padding:6px 12px;border-radius:20px;border:2px solid var(--paper);
-  }
-  .bib-card h3{font-size:1.35rem;margin-top:14px;}
-  .bib-card p{color:var(--slate);margin-top:12px;font-size:0.97rem;}
+/* custom cursor */
+.cursor{
+  position:fixed;top:0;left:0;
+  width:14px;height:14px;
+  border-radius:50%;
+  border:1px solid var(--accent);
+  pointer-events:none;
+  z-index:999;
+  transform:translate(-50%,-50%);
+  mix-blend-mode:difference;
+  transition:width .3s var(--ease),height .3s var(--ease),background .3s var(--ease);
+}
+.cursor.grow{width:64px;height:64px;background:var(--accent-soft);}
+@media(hover:none),(max-width:900px){.cursor{display:none;}}
 
-  /* ===== SPORTS STRIP ===== */
-  .sports-band{background:var(--pine);color:var(--chalk);}
-  .sports-band .section-head p{color:#CBDACE;}
-  .sports-band .eyebrow{color:var(--bib);}
-  .sport-tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(251,251,248,0.15);border:1px solid rgba(251,251,248,0.15);}
-  .sport-tile{
-    background:var(--pine);padding:34px 18px;text-align:center;position:relative;overflow:hidden;
-    transition:background .25s ease;
-  }
-  .sport-tile:hover{background:var(--pine-light);}
-  .sport-tile .num{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:var(--bib);letter-spacing:0.1em;}
-  .sport-tile h3{font-size:1.05rem;margin-top:10px;}
+/* ================= PRELOADER ================= */
+.preloader{
+  position:fixed;inset:0;z-index:1000;
+  background:var(--bg);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:1.2rem;
+}
+.preloader h1{font-size:clamp(2rem,7vw,4rem);}
+.preloader .count{font-family:var(--font-mono);color:var(--text-dim);font-size:0.9rem;letter-spacing:.1em;}
+.preloader .bar{width:min(260px,60vw);height:1px;background:var(--line);position:relative;overflow:hidden;}
+.preloader .bar span{position:absolute;left:0;top:0;bottom:0;width:0%;background:var(--accent);}
 
-  /* ===== PORTFOLIO (contact sheet) ===== */
-  .contact-sheet{
-    display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
-  }
-  .frame{position:relative;overflow:hidden;background:var(--ink);border-radius:var(--radius);aspect-ratio:4/5;}
-  .frame img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
-  .frame:hover img{transform:scale(1.07);}
-  .frame-label{
-    position:absolute;left:10px;bottom:10px;
-    font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.06em;text-transform:uppercase;
-    color:var(--chalk);background:rgba(18,33,27,0.55);padding:4px 8px;border-radius:2px;
-  }
-  .frame-tag{
-    position:absolute;top:10px;right:10px;
-    font-family:'IBM Plex Mono',monospace;font-size:0.66rem;color:var(--chalk);
-    background:var(--bib);padding:3px 7px;border-radius:2px;font-weight:600;
-  }
+/* ================= NAV ================= */
+header.nav{
+  position:fixed;top:0;left:0;right:0;z-index:150;
+  padding:1.3rem 6vw;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:transform .5s var(--ease),background .4s var(--ease),padding .4s var(--ease),backdrop-filter .4s var(--ease);
+}
+header.nav.scrolled{
+  padding:0.9rem 6vw;
+  background:rgba(10,11,13,0.55);
+  backdrop-filter:blur(16px) saturate(140%);
+  border-bottom:1px solid var(--panel-border);
+}
+header.nav.hide-nav{transform:translateY(-110%);}
+.logo{font-family:var(--font-display);font-size:1.15rem;letter-spacing:.08em;}
+.nav-links{display:flex;gap:2.2rem;font-family:var(--font-mono);font-size:0.74rem;letter-spacing:.1em;text-transform:uppercase;}
+.nav-links a{position:relative;padding:.3em 0;color:var(--text-dim);transition:color .3s;}
+.nav-links a::after{
+  content:"";position:absolute;left:0;bottom:0;height:1px;width:0;
+  background:var(--accent);transition:width .35s var(--ease);
+}
+.nav-links a:hover,.nav-links a.active{color:var(--text);}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%;}
+.nav-cta{display:flex;align-items:center;gap:1.4rem;}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:6px;}
+.burger span{width:22px;height:1px;background:var(--text);display:block;}
+@media(max-width:860px){
+  .nav-links{display:none;}
+  .nav-cta .btn{display:none;}
+  .burger{display:flex;}
+}
 
-  /* ===== COVERAGE AREA ===== */
-  .coverage{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;}
-  .state-list{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
-  .state-list li{
-    font-family:'IBM Plex Mono',monospace;font-size:0.92rem;letter-spacing:0.03em;
-    border-left:3px solid var(--bib);padding:8px 0 8px 14px;color:var(--ink);
-  }
-  .state-list li span{display:block;color:var(--slate);font-size:0.78rem;margin-top:2px;}
-  .route-svg{width:100%;height:auto;}
-  .route-svg path{fill:none;stroke:var(--pine);stroke-width:3;}
-  .route-svg .accent{stroke:var(--bib);stroke-dasharray:6 7;}
-  .route-svg circle{fill:var(--bib);}
-  .route-svg text{font-family:'IBM Plex Mono',monospace;font-size:11px;fill:var(--ink);letter-spacing:0.05em;}
+/* mobile menu overlay */
+.mobile-menu{
+  position:fixed;inset:0;z-index:140;
+  background:var(--bg);
+  display:flex;flex-direction:column;justify-content:center;gap:1.6rem;
+  padding:6vw;
+  transform:translateY(-100%);
+  transition:transform .6s var(--ease);
+}
+.mobile-menu.open{transform:translateY(0);}
+.mobile-menu a{font-family:var(--font-display);font-size:2.4rem;text-transform:uppercase;color:var(--text-dim);}
+.mobile-menu a:hover{color:var(--accent);}
 
-  /* ===== FINISH BANNER / CTA ===== */
-  .finish{
-    position:relative;background:var(--ink);color:var(--chalk);text-align:center;padding:110px 0;overflow:hidden;
-  }
-  .finish::before,.finish::after{
-    content:"";position:absolute;left:0;right:0;height:14px;
-    background-image:repeating-linear-gradient(90deg,var(--chalk) 0 14px, transparent 14px 28px);
-  }
-  .finish::before{top:0;}
-  .finish::after{bottom:0;}
-  .finish .eyebrow{color:var(--bib);}
-  .finish h2{font-size:clamp(2rem,4.6vw,3.4rem);margin-top:14px;max-width:20ch;margin-left:auto;margin-right:auto;}
-  .finish p{color:#C9D0CB;max-width:52ch;margin:20px auto 34px;}
+/* ================= HERO ================= */
+.hero{
+  position:relative;height:100svh;min-height:560px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  overflow:hidden;
+  isolation:isolate;
+}
+.hero-slides{position:absolute;inset:0;z-index:-2;}
+.hero-slide{
+  position:absolute;inset:0;
+  background-size:cover;background-position:center;
+  opacity:0;
+  transform:scale(1.15);
+  transition:opacity 1.6s ease;
+}
+.hero-slide.active{opacity:1;animation:kenburns 9s ease forwards;}
+@keyframes kenburns{from{transform:scale(1.15);}to{transform:scale(1.02);}}
+.hero::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(0deg,rgba(10,11,13,0.97) 0%,rgba(10,11,13,0.35) 48%,rgba(10,11,13,0.55) 100%);
+}
+.hero-content{padding:0 6vw 6.5rem;position:relative;}
+.hero-content .eyebrow{margin-bottom:1.4rem;}
+.hero h1{font-size:clamp(2.6rem,7.2vw,6.4rem);color:var(--text);max-width:16ch;}
+.hero h1 em{font-style:normal;color:var(--accent);}
+.hero .split-line{overflow:hidden;}
+.hero p.sub{
+  margin:1.6rem 0 2.2rem;max-width:42ch;
+  color:var(--text-dim);font-size:1.05rem;
+}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;}
+.scroll-cue{
+  position:absolute;bottom:2rem;right:6vw;
+  display:flex;flex-direction:column;align-items:center;gap:.6rem;
+  font-family:var(--font-mono);font-size:0.68rem;letter-spacing:.15em;color:var(--text-dim);
+}
+.scroll-cue .line{width:1px;height:38px;background:var(--line);position:relative;overflow:hidden;}
+.scroll-cue .line span{position:absolute;top:-100%;left:0;width:100%;height:100%;background:var(--accent);animation:scrolldrop 2s ease-in-out infinite;}
+@keyframes scrolldrop{0%{top:-100%;}50%{top:0;}100%{top:100%;}}
 
-  /* ===== CONTACT ===== */
-  .contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;}
-  .contact-info dl{margin-top:24px;}
-  .contact-info dt{font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--bib);margin-top:22px;}
-  .contact-info dd{margin:6px 0 0;font-size:1.05rem;}
-  form{background:var(--chalk);border:1px solid var(--line);border-radius:var(--radius);padding:34px;}
-  .field{margin-bottom:20px;}
-  .field label{display:block;font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--slate);margin-bottom:8px;}
-  .field input,.field select,.field textarea{
-    width:100%;border:1px solid var(--line);background:var(--paper);border-radius:var(--radius);
-    padding:12px 14px;font-family:'Work Sans',sans-serif;font-size:0.96rem;color:var(--ink);
-  }
-  .field textarea{resize:vertical;min-height:110px;}
-  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-  .submit-btn{
-    width:100%;border:none;cursor:pointer;background:var(--bib);color:var(--chalk);
-    font-family:'IBM Plex Mono',monospace;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;
-    padding:16px;border-radius:var(--radius);transition:background .2s ease;
-  }
-  .submit-btn:hover{background:var(--bib-dark);}
+/* ================= SECTION GENERIC ================= */
+section{position:relative;padding:9rem 0;}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;margin-bottom:4rem;flex-wrap:wrap;}
+.section-head h2{font-size:clamp(2rem,4.4vw,3.4rem);max-width:16ch;}
+.section-head p{color:var(--text-dim);max-width:34ch;margin:0;font-size:0.98rem;}
 
-  /* ===== FOOTER ===== */
-  footer{background:var(--pine);color:#CBDACE;padding:48px 0 28px;}
-  .footer-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
-  .footer-links{display:flex;gap:22px;font-family:'IBM Plex Mono',monospace;font-size:0.76rem;letter-spacing:0.06em;text-transform:uppercase;}
-  .footer-links a:hover{color:var(--chalk);}
-  .fine{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#8FA598;margin-top:26px;}
+/* ================= SERVICES ================= */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;}
+@media(max-width:900px){.services-grid{grid-template-columns:1fr;}}
+.service-card{
+  position:relative;
+  border-radius:22px;
+  border:1px solid var(--panel-border);
+  background:linear-gradient(160deg,var(--panel-strong),var(--panel));
+  backdrop-filter:blur(6px);
+  padding:2.6rem 2rem 2.2rem;
+  overflow:hidden;
+  transition:transform .5s var(--ease),border-color .4s;
+}
+.service-card:hover{transform:translateY(-8px);border-color:var(--accent);}
+.service-card .bib{
+  font-family:var(--font-mono);color:var(--accent);
+  font-size:0.78rem;letter-spacing:.1em;
+  border:1px solid var(--accent);
+  border-radius:100px;
+  padding:.3em .9em;
+  display:inline-block;margin-bottom:1.6rem;
+}
+.service-card h3{font-size:1.5rem;margin-bottom:0.9rem;}
+.service-card p{color:var(--text-dim);font-size:0.95rem;margin:0;}
+.service-card .glow{
+  position:absolute;width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle,var(--accent-soft),transparent 70%);
+  top:-80px;right:-80px;pointer-events:none;
+}
 
-  /* ===== REVEAL ANIM ===== */
-  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease;}
-  .reveal.in{opacity:1;transform:translateY(0);}
+/* ================= SPORTS HORIZONTAL ================= */
+.sports{background:var(--bg-alt);overflow:hidden;}
+.sports .wrap.head-wrap{margin-bottom:3.5rem;}
+.sports-viewport{overflow:visible;}
+.sports-track{display:flex;gap:1.2rem;padding:0 6vw;width:max-content;}
+@media(max-width:899px){
+  .sports-track{overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1rem;}
+  .sport-panel{scroll-snap-align:start;}
+}
+.sport-panel{
+  position:relative;
+  width:min(76vw,560px);height:64vh;min-height:380px;
+  border-radius:20px;overflow:hidden;
+  flex:none;
+  background-size:cover;background-position:center;
+}
+.sport-panel::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(10,11,13,0.9),rgba(10,11,13,0.05) 55%);
+}
+.sport-panel .cat{
+  position:absolute;font-family:var(--font-mono);color:var(--accent);
+  top:1.6rem;left:1.6rem;font-size:0.72rem;letter-spacing:.15em;z-index:2;
+}
+.sport-panel h3{
+  position:absolute;bottom:1.6rem;left:1.6rem;right:1.6rem;
+  font-size:clamp(1.8rem,4vw,2.6rem);color:var(--text);z-index:2;
+}
 
-  /* ===== RESPONSIVE ===== */
-  @media(max-width:980px){
-    .services-grid{grid-template-columns:1fr;}
-    .sport-tiles{grid-template-columns:repeat(3,1fr);}
-    .contact-sheet{grid-template-columns:repeat(2,1fr);}
-    .coverage,.contact-grid{grid-template-columns:1fr;gap:40px;}
-  }
-  @media(max-width:720px){
-    nav.links{display:none;}
-    .nav-toggle{display:inline-flex;background:none;border:1px solid var(--line);border-radius:var(--radius);padding:8px 12px;font-family:'IBM Plex Mono',monospace;}
-    .hero-grid{grid-template-columns:repeat(2,1fr);height:66vh;}
-    .sport-tiles{grid-template-columns:repeat(2,1fr);}
-    .two-col{grid-template-columns:1fr;}
-  }
+/* ================= PORTFOLIO ================= */
+.portfolio-grid{
+  columns:3 260px;column-gap:1.2rem;
+}
+@media(max-width:900px){.portfolio-grid{columns:2 200px;}}
+@media(max-width:560px){.portfolio-grid{columns:1;}}
+.frame{
+  break-inside:avoid;margin-bottom:1.2rem;
+  position:relative;border-radius:14px;overflow:hidden;
+  cursor:pointer;
+}
+.frame img{width:100%;display:block;transition:transform .8s var(--ease);}
+.frame:hover img{transform:scale(1.07);}
+.frame .tag{
+  position:absolute;top:1rem;left:1rem;
+  font-family:var(--font-mono);font-size:0.65rem;letter-spacing:.15em;
+  color:var(--bg);background:var(--accent);
+  padding:.25em .6em;border-radius:100px;z-index:2;
+}
+.frame .overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(10,11,13,0.92),rgba(10,11,13,0) 55%);
+  display:flex;align-items:flex-end;padding:1.1rem;
+  opacity:0;transform:translateY(10px);
+  transition:opacity .4s var(--ease),transform .4s var(--ease);
+}
+.frame:hover .overlay{opacity:1;transform:translateY(0);}
+.frame .overlay span{font-family:var(--font-mono);font-size:0.82rem;color:var(--text);letter-spacing:.03em;}
+
+/* lightbox */
+.lightbox{
+  position:fixed;inset:0;z-index:500;
+  background:rgba(8,9,10,0.96);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;
+  transition:opacity .4s var(--ease);
+}
+.lightbox.open{opacity:1;pointer-events:auto;}
+.lightbox img{max-width:min(86vw,1100px);max-height:80vh;border-radius:10px;object-fit:contain;transform:scale(.96);transition:transform .4s var(--ease);}
+.lightbox.open img{transform:scale(1);}
+.lightbox .lb-cap{position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);font-family:var(--font-mono);font-size:0.8rem;color:var(--text-dim);}
+.lb-close,.lb-next,.lb-prev{
+  position:absolute;background:none;border:1px solid var(--line);color:var(--text);
+  border-radius:50%;width:46px;height:46px;display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;transition:border-color .3s,color .3s;
+}
+.lb-close:hover,.lb-next:hover,.lb-prev:hover{border-color:var(--accent);color:var(--accent);}
+.lb-close{top:2rem;right:2rem;}
+.lb-next{right:2rem;top:50%;transform:translateY(-50%);}
+.lb-prev{left:2rem;top:50%;transform:translateY(-50%);}
+@media(max-width:640px){.lb-next,.lb-prev{width:38px;height:38px;}.lb-prev{left:0.8rem;}.lb-next{right:0.8rem;}.lb-close{top:1rem;right:1rem;}}
+
+/* ================= COVERAGE ================= */
+.coverage{background:var(--bg-alt);}
+.coverage-inner{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;}
+@media(max-width:900px){.coverage-inner{grid-template-columns:1fr;}}
+.states{list-style:none;margin:2.2rem 0 0;padding:0;display:flex;flex-direction:column;gap:0;}
+.states li{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.1rem 0;border-top:1px solid var(--line);
+  font-family:var(--font-mono);font-size:0.9rem;color:var(--text-dim);
+}
+.states li:last-child{border-bottom:1px solid var(--line);}
+.states li b{color:var(--text);font-family:var(--font-body);font-weight:600;font-size:1rem;}
+.map-box{
+  position:relative;border:1px solid var(--panel-border);border-radius:20px;
+  background:var(--panel);padding:2rem;aspect-ratio:1/1;max-width:460px;margin:0 auto;
+}
+.map-box svg{width:100%;height:100%;}
+.route-path{fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-dasharray:900;stroke-dashoffset:900;}
+.map-dot{fill:var(--accent);}
+.map-dot-ring{fill:none;stroke:var(--accent);stroke-width:1;opacity:.5;transform-origin:center;animation:ringpulse 2.4s ease-out infinite;}
+@keyframes ringpulse{0%{transform:scale(0.4);opacity:.6;}100%{transform:scale(2.2);opacity:0;}}
+.map-label{font-family:var(--font-mono);font-size:9px;fill:var(--text-dim);letter-spacing:.05em;}
+
+/* ================= BOOKING BAND ================= */
+.booking{
+  padding:8rem 0;text-align:center;position:relative;overflow:hidden;
+}
+.booking h2{font-size:clamp(2.2rem,6vw,4.6rem);max-width:20ch;margin:0 auto 2.4rem;}
+.booking-bg{
+  position:absolute;inset:0;z-index:-1;opacity:.14;
+  background:radial-gradient(ellipse at 50% 50%,var(--accent-soft),transparent 60%);
+}
+
+/* ================= CONTACT ================= */
+.contact-inner{display:grid;grid-template-columns:0.85fr 1.15fr;gap:3rem;}
+@media(max-width:900px){.contact-inner{grid-template-columns:1fr;}}
+.contact-meta{display:flex;flex-direction:column;gap:2.2rem;}
+.meta-block .k{font-family:var(--font-mono);font-size:0.68rem;letter-spacing:.15em;color:var(--accent);text-transform:uppercase;margin-bottom:.5rem;}
+.meta-block .v{color:var(--text);font-size:1.02rem;}
+.glass-form{
+  border:1px solid var(--panel-border);
+  border-radius:22px;background:var(--panel);backdrop-filter:blur(8px);
+  padding:2.4rem;
+  background-image:linear-gradient(160deg,rgba(255,255,255,0.05),transparent 60%);
+}
+.field{position:relative;margin-bottom:1.6rem;}
+.field label{
+  position:absolute;left:0;top:0.9rem;
+  color:var(--text-dimmer);font-size:1rem;
+  transition:all .25s var(--ease);pointer-events:none;
+}
+.field input,.field select,.field textarea{
+  width:100%;background:transparent;border:none;border-bottom:1px solid var(--line);
+  color:var(--text);font-family:var(--font-body);font-size:1rem;
+  padding:0.9rem 0 0.6rem;outline:none;
+  transition:border-color .3s;appearance:none;
+}
+.field select{color:var(--text);}
+.field select option{background:#111216;}
+.field textarea{resize:vertical;min-height:70px;}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent);}
+.field input:focus+label,.field input:not(:placeholder-shown)+label,
+.field textarea:focus+label,.field textarea:not(:placeholder-shown)+label,
+.field.filled label{
+  top:-0.9rem;font-size:0.7rem;letter-spacing:.08em;color:var(--accent);text-transform:uppercase;
+}
+.field-row{display:flex;gap:1.4rem;}
+@media(max-width:520px){.field-row{flex-direction:column;gap:0;}}
+.form-note{font-size:0.78rem;color:var(--text-dimmer);margin-top:0.6rem;}
+
+/* ================= FOOTER ================= */
+footer{
+  position:relative;padding:6rem 0 2.4rem;overflow:hidden;
+  border-top:1px solid var(--line);
+}
+.footer-top{display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;flex-wrap:wrap;margin-bottom:5rem;}
+.footer-mark{
+  font-family:var(--font-display);font-size:clamp(3rem,12vw,9rem);
+  line-height:0.85;color:var(--text);letter-spacing:0;
+}
+.footer-links{display:flex;gap:1.8rem;flex-wrap:wrap;font-family:var(--font-mono);font-size:0.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-dim);}
+.footer-links a:hover{color:var(--accent);}
+.footer-bottom{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;font-size:0.8rem;color:var(--text-dimmer);font-family:var(--font-mono);}
+
+/* reveal utility */
+.reveal{opacity:0;transform:translateY(40px);}
+
+@media (prefers-reduced-motion: reduce){
+  .grain{display:none;}
+  .hero-slide.active{animation:none;transform:scale(1);}
+}
 </style>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site">
-  <div class="nav">
-    <a class="logo" href="#top">JB<span>STUDIOS</span></a>
-    <nav class="links" aria-label="Primary">
-      <a href="#services">Services</a>
-      <a href="#sports">Sports</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#coverage">Coverage Area</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="nav-cta" href="#contact">Get a Quote</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<div class="preloader" id="preloader">
+  <h1>JBSTUDIOS</h1>
+  <div class="bar"><span id="preloader-bar"></span></div>
+  <div class="count" id="preloader-count">00%</div>
+</div>
+
+<header class="nav" id="siteNav">
+  <a href="#top" class="logo">JBSTUDIOS</a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#services">Services</a>
+    <a href="#sports">Sports</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#coverage">Coverage Area</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-cta">
+    <a href="#contact" class="btn btn-solid">Get a Quote</a>
+    <button class="burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<main id="main">
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services">Services</a>
+  <a href="#sports">Sports</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#coverage">Coverage Area</a>
+  <a href="#contact">Contact</a>
+</div>
 
-  <!-- HERO -->
-  <section class="hero" id="top" style="padding:0;">
-    <div class="hero-grid" aria-hidden="true">
-      <img src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/StreetFest.jpg" alt="" loading="eager">
-      <img src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/WeddingDance.jpg" alt="" loading="eager">
-      <img src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/SeniorSmash.jpg" alt="" loading="eager">
-      <img src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/Prom1.jpg" alt="" loading="eager">
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image:url('https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/StreetFest.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/WeddingDance.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/SeniorSmash.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/Prom1.jpg')"></div>
     </div>
-    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <span class="bib-tag"><span class="dot"></span>Western MA · CT · NY · VT</span>
-      <h1>Every finish line.<br>Every first dance.<br><em>One lens.</em></h1>
-      <p class="lede">JbStudios is the leader in moment capturing — professional photo and video coverage for races, weddings, graduations, families, Sweet&nbsp;16s, and community events across the Northeast.</p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="#contact">Get a Quote</a>
-        <a class="btn btn-ghost" href="#portfolio">View Portfolio</a>
+      <p class="eyebrow">Western MA · CT · NY · VT</p>
+      <h1 id="heroHeadline">
+        <span class="split-line">Every finish line.</span>
+        <span class="split-line">Every first dance.</span>
+        <span class="split-line"><em>One lens.</em></span>
+      </h1>
+      <p class="sub">JbStudios is the leader in moment capturing — professional photo and video coverage for races, weddings, graduations, families, Sweet 16s, and community events across the Northeast.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-solid">Get a Quote</a>
+        <a href="#portfolio" class="btn">View Portfolio</a>
       </div>
     </div>
+    <div class="scroll-cue"><span>Scroll</span><div class="line"><span></span></div></div>
   </section>
 
-  <!-- COURSE LINE DIVIDER -->
-  <div class="course-line-section">
-    <svg class="course-line" viewBox="0 0 1200 64" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0,32 L120,32 L160,12 L220,52 L280,32 L400,32 L440,50 L500,14 L560,32 L1200,32"></path>
-      <circle cx="220" cy="52" r="5"></circle>
-      <circle cx="500" cy="14" r="5"></circle>
-    </svg>
-  </div>
-
-  <!-- SERVICES -->
+  <!-- ================= SERVICES ================= -->
   <section id="services">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">What I Shoot</span>
-        <h2>Three ways I tell your story</h2>
-        <p>From race-day chaos to reception slow dances, every booking gets the same standard: fast turnaround, honest color, and images people actually want to share.</p>
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">What I Shoot</p>
+          <h2 class="reveal">Three ways I tell your story</h2>
+        </div>
+        <p class="reveal">From race-day chaos to reception slow dances, every booking gets the same standard: fast turnaround, honest color, and images people actually want to share.</p>
       </div>
       <div class="services-grid">
-        <article class="bib-card reveal">
-          <span class="bib-number">No. 01</span>
+        <div class="service-card reveal">
+          <div class="glow"></div>
+          <span class="bib">No. 01</span>
           <h3>Race &amp; Event Coverage</h3>
           <p>Partnering with race directors, teams, and organizations to provide complete media coverage — from pre-race atmosphere to finish-line emotion, delivering content for athletes, brands, and marketing campaigns.</p>
-        </article>
-        <article class="bib-card reveal">
-          <span class="bib-number">No. 02</span>
+        </div>
+        <div class="service-card reveal">
+          <div class="glow"></div>
+          <span class="bib">No. 02</span>
           <h3>Motion &amp; Film</h3>
           <p>Expanding beyond still photography into motion — highlight reels, documentaries, and commercial content that connect with audiences and showcase the intensity and beauty of sport.</p>
-        </article>
-        <article class="bib-card reveal">
-          <span class="bib-number">No. 03</span>
+        </div>
+        <div class="service-card reveal">
+          <div class="glow"></div>
+          <span class="bib">No. 03</span>
           <h3>Brand Campaigns</h3>
           <p>Supporting brands, athletes, and organizations with custom photo and video campaigns — from athlete portraits to product features, built to align with marketing strategy.</p>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- SPORTS BAND -->
-  <section class="sports-band" id="sports">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Endurance &amp; Community Sports</span>
-        <h2>Raw motion, real terrain</h2>
-        <p>Capturing the energy, passion, and raw motion of endurance sports. From trail running and cycling to triathlons and community races, I deliver dynamic images that tell the story of both the athletes and the environments they move through.</p>
+  <!-- ================= SPORTS (horizontal) ================= -->
+  <section class="sports" id="sports">
+    <div class="wrap head-wrap">
+      <div class="section-head" style="margin-bottom:0;">
+        <div>
+          <p class="eyebrow">Endurance &amp; Community Sports</p>
+          <h2 class="reveal">Raw motion, real terrain</h2>
+        </div>
+        <p class="reveal">Capturing the energy, passion, and raw motion of endurance sports. From trail running and cycling to triathlons and community races, I deliver dynamic images that tell the story of both the athletes and the environments they move through.</p>
       </div>
     </div>
-    <div class="sport-tiles reveal">
-      <div class="sport-tile"><div class="num">Cat. 01</div><h3>BeastCoast</h3></div>
-      <div class="sport-tile"><div class="num">Cat. 02</div><h3>Cycling</h3></div>
-      <div class="sport-tile"><div class="num">Cat. 03</div><h3>Running</h3></div>
-      <div class="sport-tile"><div class="num">Cat. 04</div><h3>Skiing</h3></div>
-      <div class="sport-tile"><div class="num">Cat. 05</div><h3>Triathlons</h3></div>
+    <div class="sports-viewport">
+      <div class="sports-track" id="sportsTrack">
+        <div class="sport-panel" style="background-image:url('https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/StreetFest.jpg')">
+          <span class="cat">Cat. 01</span><h3>BeastCoast</h3>
+        </div>
+        <div class="sport-panel" style="background-image:url('https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/WineNight.jpg')">
+          <span class="cat">Cat. 02</span><h3>Cycling</h3>
+        </div>
+        <div class="sport-panel" style="background-image:url('https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/Bubbly.jpg')">
+          <span class="cat">Cat. 03</span><h3>Running</h3>
+        </div>
+        <div class="sport-panel" style="background-image:url('https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/32ndBirthday.jpg')">
+          <span class="cat">Cat. 04</span><h3>Skiing</h3>
+        </div>
+        <div class="sport-panel" style="background-image:url('https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/Prom2.jpg')">
+          <span class="cat">Cat. 05</span><h3>Triathlons</h3>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- PORTFOLIO -->
+  <!-- ================= PORTFOLIO ================= -->
   <section id="portfolio">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Contact Sheet</span>
-        <h2>Selected moments</h2>
-        <p>A cross-section of recent coverage — celebrations, milestones, and community events across the region.</p>
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Contact Sheet</p>
+          <h2 class="reveal">Selected moments</h2>
+        </div>
+        <p class="reveal">A cross-section of recent coverage — celebrations, milestones, and community events across the region.</p>
       </div>
-      <div class="contact-sheet">
-        <figure class="frame reveal">
-          <img src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/WeddingDance.jpg" alt="Bride and groom sharing a first dance at a Western Massachusetts wedding reception" loading="lazy">
-          <span class="frame-tag">F01</span>
-          <figcaption class="frame-label">Wedding · First Dance</figcaption>
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- frames injected identically in markup for SEO, JS wires up the lightbox -->
+        <figure class="frame reveal" data-index="0"><span class="tag">F01</span>
+          <img loading="lazy" src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/WeddingDance.jpg" alt="Bride and groom sharing a first dance at a Western Massachusetts wedding reception">
+          <div class="overlay"><span>Wedding · First Dance</span></div>
         </figure>
-        <figure class="frame reveal">
-          <img src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/Prom1.jpg" alt="Group of teens dressed up for prom night" loading="lazy">
-          <span class="frame-tag">F02</span>
-          <figcaption class="frame-label">Prom Night</figcaption>
+        <figure class="frame reveal" data-index="1"><span class="tag">F02</span>
+          <img loading="lazy" src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/Prom1.jpg" alt="Group of teens dressed up for prom night">
+          <div class="overlay"><span>Prom Night</span></div>
         </figure>
-        <figure class="frame reveal">
-          <img src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/SeniorSmash.jpg" alt="Senior smash celebration event photography" loading="lazy">
-          <span class="frame-tag">F03</span>
-          <figcaption class="frame-label">Senior Smash</figcaption>
+        <figure class="frame reveal" data-index="2"><span class="tag">F03</span>
+          <img loading="lazy" src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/SeniorSmash.jpg" alt="Senior smash celebration event photography">
+          <div class="overlay"><span>Senior Smash</span></div>
         </figure>
-        <figure class="frame reveal">
-          <img src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/StreetFest.jpg" alt="Crowd enjoying a community street festival" loading="lazy">
-          <span class="frame-tag">F04</span>
-          <figcaption class="frame-label">Street Fest</figcaption>
+        <figure class="frame reveal" data-index="3"><span class="tag">F04</span>
+          <img loading="lazy" src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/StreetFest.jpg" alt="Crowd enjoying a community street festival">
+          <div class="overlay"><span>Street Fest</span></div>
         </figure>
-        <figure class="frame reveal">
-          <img src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/Prom2.jpg" alt="Prom attendees posing for portraits" loading="lazy">
-          <span class="frame-tag">F05</span>
-          <figcaption class="frame-label">Prom Portraits</figcaption>
+        <figure class="frame reveal" data-index="4"><span class="tag">F05</span>
+          <img loading="lazy" src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/Prom2.jpg" alt="Prom attendees posing for portraits">
+          <div class="overlay"><span>Prom Portraits</span></div>
         </figure>
-        <figure class="frame reveal">
-          <img src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/32ndBirthday.jpg" alt="Guests celebrating a 32nd birthday party" loading="lazy">
-          <span class="frame-tag">F06</span>
-          <figcaption class="frame-label">Birthday Celebration</figcaption>
+        <figure class="frame reveal" data-index="5"><span class="tag">F06</span>
+          <img loading="lazy" src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/32ndBirthday.jpg" alt="Guests celebrating a 32nd birthday party">
+          <div class="overlay"><span>Birthday Celebration</span></div>
         </figure>
-        <figure class="frame reveal">
-          <img src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/WineNight.jpg" alt="Guests enjoying a community wine tasting night" loading="lazy">
-          <span class="frame-tag">F07</span>
-          <figcaption class="frame-label">Wine Night</figcaption>
+        <figure class="frame reveal" data-index="6"><span class="tag">F07</span>
+          <img loading="lazy" src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/WineNight.jpg" alt="Guests enjoying a community wine tasting night">
+          <div class="overlay"><span>Wine Night</span></div>
         </figure>
-        <figure class="frame reveal">
-          <img src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/Bubbly.jpg" alt="Champagne toast at a private celebration" loading="lazy">
-          <span class="frame-tag">F08</span>
-          <figcaption class="frame-label">Private Celebration</figcaption>
+        <figure class="frame reveal" data-index="7"><span class="tag">F08</span>
+          <img loading="lazy" src="https://www.jbstudiosfilm.com/storage/images/blocks/photo-carousel/Bubbly.jpg" alt="Champagne toast at a private celebration">
+          <div class="overlay"><span>Private Celebration</span></div>
         </figure>
       </div>
     </div>
   </section>
 
-  <!-- COVERAGE AREA -->
-  <section id="coverage" style="background:var(--chalk);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
-    <div class="wrap coverage">
-      <div class="reveal">
-        <span class="eyebrow">Service Area</span>
-        <h2>Four states, one route</h2>
-        <p style="color:var(--slate);margin-top:16px;max-width:48ch;">Based in Western Massachusetts and on the road most weekends — booking races, weddings, and community events throughout the region.</p>
-        <ul class="state-list">
-          <li>Massachusetts <span>Home base &amp; Western MA</span></li>
-          <li>Connecticut <span>Races &amp; events</span></li>
-          <li>New York <span>Regional coverage</span></li>
-          <li>Vermont <span>Regional coverage</span></li>
-        </ul>
-      </div>
-      <div class="reveal" aria-hidden="true">
-        <svg class="route-svg" viewBox="0 0 420 300">
-          <path class="accent" d="M40,250 C90,180 60,120 120,90 C170,65 150,20 210,20"></path>
-          <path d="M40,250 C120,260 160,220 190,180 C230,130 260,150 300,110 C330,80 320,40 380,30"></path>
-          <circle cx="40" cy="250" r="6"></circle>
-          <circle cx="190" cy="180" r="5"></circle>
-          <circle cx="300" cy="110" r="5"></circle>
-          <circle cx="380" cy="30" r="6"></circle>
-          <text x="14" y="272">MA</text>
-          <text x="196" y="200">CT</text>
-          <text x="306" y="130">NY</text>
-          <text x="352" y="20">VT</text>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <!-- FINISH BANNER -->
-  <section class="finish">
+  <!-- ================= COVERAGE ================= -->
+  <section class="coverage" id="coverage">
     <div class="wrap">
-      <span class="eyebrow">Booking Now</span>
-      <h2>Ready to capture your next milestone or race day?</h2>
-      <p>Whether it's a marathon at sunrise or a wedding reception at midnight, let's talk about coverage.</p>
-      <a class="btn btn-primary" href="#contact">Get a Quote</a>
+      <div class="coverage-inner">
+        <div>
+          <p class="eyebrow">Service Area</p>
+          <h2 class="reveal">Four states, one route</h2>
+          <p style="color:var(--text-dim);max-width:38ch;margin-top:1.2rem;">Based in Western Massachusetts and on the road most weekends — booking races, weddings, and community events throughout the region.</p>
+          <ul class="states">
+            <li><b>Massachusetts</b><span>Home base &amp; Western MA</span></li>
+            <li><b>Connecticut</b><span>Races &amp; events</span></li>
+            <li><b>New York</b><span>Regional coverage</span></li>
+            <li><b>Vermont</b><span>Regional coverage</span></li>
+          </ul>
+        </div>
+        <div class="map-box reveal">
+          <svg viewBox="0 0 400 400">
+            <path class="route-path" id="routePath" d="M70,320 C110,260 90,200 140,170 C190,140 180,90 250,70 C300,55 320,90 340,60"/>
+            <g>
+              <circle class="map-dot-ring" cx="70" cy="320" r="10" style="animation-delay:0s"/>
+              <circle class="map-dot" cx="70" cy="320" r="5"/>
+              <text class="map-label" x="82" y="324">MA</text>
+            </g>
+            <g>
+              <circle class="map-dot-ring" cx="140" cy="170" r="10" style="animation-delay:.4s"/>
+              <circle class="map-dot" cx="140" cy="170" r="5"/>
+              <text class="map-label" x="152" y="174">VT</text>
+            </g>
+            <g>
+              <circle class="map-dot-ring" cx="250" cy="70" r="10" style="animation-delay:.8s"/>
+              <circle class="map-dot" cx="250" cy="70" r="5"/>
+              <text class="map-label" x="262" y="74">NY</text>
+            </g>
+            <g>
+              <circle class="map-dot-ring" cx="340" cy="60" r="10" style="animation-delay:1.2s"/>
+              <circle class="map-dot" cx="340" cy="60" r="5"/>
+              <text class="map-label" x="304" y="50">CT</text>
+            </g>
+          </svg>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- ================= BOOKING BAND ================= -->
+  <section class="booking">
+    <div class="booking-bg"></div>
+    <div class="wrap">
+      <p class="eyebrow" style="justify-content:center;">Booking Now</p>
+      <h2 class="reveal">Ready to capture your next milestone or race day?</h2>
+      <p style="color:var(--text-dim);max-width:44ch;margin:0 auto 2.4rem;">Whether it's a marathon at sunrise or a wedding reception at midnight, let's talk about coverage.</p>
+      <a href="#contact" class="btn btn-solid">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
   <section id="contact">
-    <div class="wrap contact-grid">
-      <div class="contact-info reveal">
-        <span class="eyebrow">Get In Touch</span>
-        <h2>Let's plan your coverage</h2>
-        <p style="color:var(--slate);margin-top:16px;">Tell me about your race, event, or shoot — I'll follow up with availability and a custom quote.</p>
-        <dl>
-          <dt>Service Area</dt>
-          <dd>Western Massachusetts, Connecticut, New York &amp; Vermont</dd>
-          <dt>Response Time</dt>
-          <dd>Within 1–2 business days</dd>
-          <dt>Bookings</dt>
-          <dd>Races · Weddings · Graduations · Sweet 16s · Community Events · Brand Campaigns</dd>
-        </dl>
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Get In Touch</p>
+          <h2 class="reveal">Let's plan your coverage</h2>
+        </div>
+        <p class="reveal">Tell me about your race, event, or shoot — I'll follow up with availability and a custom quote.</p>
       </div>
-      <form class="reveal" aria-label="Quote request form" onsubmit="return false;">
-        <div class="two-col">
-          <div class="field">
-            <label for="fname">Name</label>
-            <input id="fname" name="name" type="text" autocomplete="name" required>
+      <div class="contact-inner">
+        <div class="contact-meta reveal">
+          <div class="meta-block"><div class="k">Service Area</div><div class="v">Western Massachusetts, Connecticut, New York &amp; Vermont</div></div>
+          <div class="meta-block"><div class="k">Response Time</div><div class="v">Within 1–2 business days</div></div>
+          <div class="meta-block"><div class="k">Bookings</div><div class="v">Races · Weddings · Graduations · Sweet 16s · Community Events · Brand Campaigns</div></div>
+        </div>
+        <form class="glass-form reveal" id="quoteForm">
+          <div class="field-row">
+            <div class="field"><input type="text" placeholder=" " required><label>Name</label></div>
+            <div class="field"><input type="email" placeholder=" " required><label>Email</label></div>
           </div>
-          <div class="field">
-            <label for="femail">Email</label>
-            <input id="femail" name="email" type="email" autocomplete="email" required>
+          <div class="field-row">
+            <div class="field filled">
+              <select required>
+                <option value="" disabled selected></option>
+                <option>Race / Endurance Event</option>
+                <option>Wedding</option>
+                <option>Graduation / Sweet 16</option>
+                <option>Community Event</option>
+                <option>Brand Campaign</option>
+              </select>
+              <label>Event type</label>
+            </div>
+            <div class="field"><input type="date" placeholder=" "><label>Event date</label></div>
           </div>
-        </div>
-        <div class="field">
-          <label for="ftype">Event type</label>
-          <select id="ftype" name="event_type">
-            <option>Race / Endurance Event</option>
-            <option>Wedding</option>
-            <option>Graduation / Sweet 16</option>
-            <option>Community Event</option>
-            <option>Brand Campaign</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="fdate">Event date</label>
-          <input id="fdate" name="event_date" type="date">
-        </div>
-        <div class="field">
-          <label for="fmsg">Details</label>
-          <textarea id="fmsg" name="message" placeholder="Location, headcount, coverage length…"></textarea>
-        </div>
-        <button class="submit-btn" type="submit">Request a Quote</button>
-      </form>
+          <div class="field"><textarea rows="4" placeholder=" "></textarea><label>Details</label></div>
+          <button type="submit" class="btn btn-solid" style="width:100%;justify-content:center;margin-top:.6rem;">Request a Quote</button>
+          <p class="form-note" id="formNote">This is a demo concept form and is not connected to a live inbox.</p>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -536,25 +732,289 @@
 
 <footer>
   <div class="wrap">
-    <div class="footer-row">
-      <a class="logo" href="#top" style="color:var(--chalk);">JB<span>STUDIOS</span></a>
-      <div class="footer-links">
+    <div class="footer-top">
+      <a href="#top" class="footer-mark">JBSTUDIOS</a>
+      <nav class="footer-links">
         <a href="#services">Services</a>
         <a href="#sports">Sports</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
-      </div>
+      </nav>
     </div>
-    <p class="fine">© 2026 JbStudios. Sports, race &amp; event photography across MA, CT, NY &amp; VT. Demo concept redesign — content and imagery courtesy of jbstudiosfilm.com.</p>
+    <div class="footer-bottom">
+      <span>© 2026 JbStudios. Sports, race &amp; event photography across MA, CT, NY &amp; VT.</span>
+      <span>Demo concept redesign — content and imagery courtesy of jbstudiosfilm.com.</span>
+    </div>
   </div>
 </footer>
 
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose">&times;</button>
+  <button class="lb-prev" id="lbPrev">&larr;</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-next" id="lbNext">&rarr;</button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+
 <script>
-  // scroll reveal
-  const io = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, {threshold:0.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+(function(){
+  "use strict";
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- PRELOADER ---------- */
+  var barEl = document.getElementById('preloader-bar');
+  var countEl = document.getElementById('preloader-count');
+  var pct = 0;
+  var loadTimer = setInterval(function(){
+    pct += Math.random()*18;
+    if(pct >= 100){
+      pct = 100;
+      clearInterval(loadTimer);
+      barEl.style.width = '100%';
+      countEl.textContent = '100%';
+      var pre = document.getElementById('preloader');
+      setTimeout(function(){
+        pre.style.transition = 'opacity .6s ease, visibility .6s ease';
+        pre.style.opacity = '0';
+        pre.style.visibility = 'hidden';
+        startPageAnimations();
+      }, 250);
+      return;
+    }
+    barEl.style.width = pct + '%';
+    countEl.textContent = Math.floor(pct) + '%';
+  }, 140);
+
+  /* ---------- LENIS SMOOTH SCROLL ---------- */
+  var lenis = null;
+  if(!reduceMotion && window.Lenis){
+    lenis = new Lenis({ duration: 1.1, smoothWheel: true });
+    function raf(time){ lenis.raf(time); requestAnimationFrame(raf); }
+    requestAnimationFrame(raf);
+    if(window.gsap && window.ScrollTrigger){
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(function(time){ lenis.raf(time*1000); });
+      gsap.ticker.lagSmoothing(0);
+    }
+  }
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* ---------- CUSTOM CURSOR ---------- */
+  var cursor = document.getElementById('cursor');
+  if(window.matchMedia('(hover:hover)').matches){
+    window.addEventListener('mousemove', function(e){
+      gsap.to(cursor, {x:e.clientX, y:e.clientY, duration:.35, ease:'power3.out'});
+    });
+    document.querySelectorAll('a, button, .frame, .service-card').forEach(function(el){
+      el.addEventListener('mouseenter', function(){ cursor.classList.add('grow'); });
+      el.addEventListener('mouseleave', function(){ cursor.classList.remove('grow'); });
+    });
+  }
+
+  /* ---------- NAV SCROLL BEHAVIOR ---------- */
+  var nav = document.getElementById('siteNav');
+  var lastY = window.scrollY;
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY;
+    nav.classList.toggle('scrolled', y > 40);
+    if(y > lastY && y > 200){ nav.classList.add('hide-nav'); }
+    else { nav.classList.remove('hide-nav'); }
+    lastY = y;
+  }, {passive:true});
+
+  /* mobile menu */
+  var burger = document.getElementById('burgerBtn');
+  var mobileMenu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', function(){ mobileMenu.classList.toggle('open'); });
+  mobileMenu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ mobileMenu.classList.remove('open'); });
+  });
+
+  /* active link highlight */
+  var sections = ['services','sports','portfolio','coverage','contact'].map(function(id){return document.getElementById(id);});
+  var links = document.querySelectorAll('.nav-links a');
+  ScrollTrigger.batch(sections, {
+    start:'top center', end:'bottom center',
+    onEnter: function(batch){ setActive(batch[0]); },
+    onEnterBack: function(batch){ setActive(batch[0]); }
+  });
+  function setActive(sec){
+    if(!sec) return;
+    links.forEach(function(l){
+      l.classList.toggle('active', l.getAttribute('href') === '#'+sec.id);
+    });
+  }
+
+  /* ---------- HERO SLIDESHOW ---------- */
+  var slides = document.querySelectorAll('.hero-slide');
+  var slideIndex = 0;
+  if(!reduceMotion){
+    setInterval(function(){
+      slides[slideIndex].classList.remove('active');
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add('active');
+    }, 5200);
+  }
+
+  /* ---------- MAGNETIC BUTTONS ---------- */
+  if(!reduceMotion){
+    document.querySelectorAll('.btn').forEach(function(btn){
+      btn.addEventListener('mousemove', function(e){
+        var r = btn.getBoundingClientRect();
+        var x = e.clientX - r.left - r.width/2;
+        var y = e.clientY - r.top - r.height/2;
+        gsap.to(btn, {x:x*0.25, y:y*0.5, duration:.4, ease:'power3.out'});
+      });
+      btn.addEventListener('mouseleave', function(){
+        gsap.to(btn, {x:0, y:0, duration:.5, ease:'elastic.out(1,0.4)'});
+      });
+    });
+  }
+
+  /* ---------- SCROLL REVEALS ---------- */
+  function initReveals(){
+    document.querySelectorAll('.reveal').forEach(function(el){
+      gsap.to(el, {
+        opacity:1, y:0, duration:1, ease:'power3.out',
+        scrollTrigger:{ trigger: el, start:'top 88%' }
+      });
+    });
+    gsap.utils.toArray('.frame').forEach(function(f, i){
+      gsap.set(f, {opacity:0, y:30});
+      gsap.to(f, {opacity:1, y:0, duration:.8, delay:(i%4)*0.08, ease:'power3.out',
+        scrollTrigger:{ trigger:f, start:'top 92%' }});
+    });
+  }
+
+  /* ---------- HERO SPLIT TEXT ---------- */
+  function initHeroText(){
+    var lines = document.querySelectorAll('.hero .split-line');
+    gsap.set(lines, {yPercent:0});
+    lines.forEach(function(line){
+      var wrapEl = document.createElement('span');
+      wrapEl.style.display = 'inline-block';
+      wrapEl.style.transform = 'translateY(110%)';
+      wrapEl.textContent = line.textContent;
+      if(line.querySelector('em')){
+        wrapEl.innerHTML = '<em>' + line.querySelector('em').textContent + '</em>';
+      }
+      line.innerHTML = '';
+      line.appendChild(wrapEl);
+      gsap.to(wrapEl, {y:0, duration:1.1, ease:'power4.out', delay:.15});
+    });
+    gsap.from('.hero .eyebrow, .hero .sub, .hero-actions, .scroll-cue', {
+      opacity:0, y:20, duration:1, stagger:.12, delay:.9, ease:'power3.out'
+    });
+  }
+
+  /* ---------- SPORTS HORIZONTAL SCROLL ---------- */
+  function initSportsScroll(){
+    var mm = gsap.matchMedia();
+    mm.add('(min-width: 900px)', function(){
+      var track = document.getElementById('sportsTrack');
+      var getDistance = function(){ return track.scrollWidth - window.innerWidth + 100; };
+      var tween = gsap.to(track, {
+        x: function(){ return -getDistance(); },
+        ease:'none',
+        scrollTrigger:{
+          trigger:'.sports', pin:true, scrub:0.6,
+          start:'top top', end: function(){ return '+=' + getDistance(); },
+          invalidateOnRefresh:true
+        }
+      });
+      return function(){ tween.kill(); };
+    });
+  }
+
+  /* ---------- COVERAGE MAP DRAW ---------- */
+  function initMap(){
+    var path = document.getElementById('routePath');
+    gsap.to(path, {
+      strokeDashoffset:0, duration:2, ease:'power2.out',
+      scrollTrigger:{ trigger:'.coverage', start:'top 70%' }
+    });
+  }
+
+  /* ---------- LIGHTBOX ---------- */
+  function initLightbox(){
+    var frames = Array.prototype.slice.call(document.querySelectorAll('.frame'));
+    var data = frames.map(function(f){
+      return { src: f.querySelector('img').src, alt: f.querySelector('img').alt, cap: f.querySelector('.overlay span').textContent };
+    });
+    var lb = document.getElementById('lightbox');
+    var lbImg = document.getElementById('lbImg');
+    var lbCap = document.getElementById('lbCap');
+    var current = 0;
+
+    function open(i){
+      current = i;
+      lbImg.src = data[i].src;
+      lbImg.alt = data[i].alt;
+      lbCap.textContent = data[i].cap;
+      lb.classList.add('open');
+    }
+    function close(){ lb.classList.remove('open'); }
+    function next(){ open((current+1) % data.length); }
+    function prev(){ open((current-1+data.length) % data.length); }
+
+    frames.forEach(function(f, i){ f.addEventListener('click', function(){ open(i); }); });
+    document.getElementById('lbClose').addEventListener('click', close);
+    document.getElementById('lbNext').addEventListener('click', next);
+    document.getElementById('lbPrev').addEventListener('click', prev);
+    lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+    document.addEventListener('keydown', function(e){
+      if(!lb.classList.contains('open')) return;
+      if(e.key === 'Escape') close();
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+    });
+  }
+
+  /* ---------- FORM ---------- */
+  function initForm(){
+    var form = document.getElementById('quoteForm');
+    var note = document.getElementById('formNote');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      note.textContent = "Thanks — this demo form isn't wired to a live inbox yet, but a real submission here would send straight to JbStudios.";
+      note.style.color = 'var(--accent)';
+    });
+    form.querySelectorAll('select').forEach(function(sel){
+      sel.addEventListener('change', function(){
+        sel.closest('.field').classList.toggle('filled', sel.value !== '');
+      });
+    });
+  }
+
+  function startPageAnimations(){
+    initHeroText();
+    initReveals();
+    initSportsScroll();
+    initMap();
+    initLightbox();
+    initForm();
+    ScrollTrigger.refresh();
+  }
+
+  /* fallback: if load takes too long or JS errors, ensure preloader hides */
+  window.addEventListener('load', function(){
+    setTimeout(function(){
+      var pre = document.getElementById('preloader');
+      if(pre && pre.style.opacity !== '0'){
+        pre.style.opacity = '0';
+        pre.style.visibility = 'hidden';
+        startPageAnimations();
+      }
+    }, 4000);
+  });
+})();
 </script>
 </body>
-</html>c
+</html>
